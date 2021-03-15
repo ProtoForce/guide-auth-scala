@@ -2,7 +2,7 @@ name := "guide-auth-system"
 
 organization in ThisBuild := "io.protoforce.guide"
 
-version in ThisBuild := "1.0.0"
+version in ThisBuild := "1.0.0-SNAPSHOT"
 
 homepage in ThisBuild := Some(url("https://www.protoforce.io/ProtoForce/post/extensive-guide-to-authentication-authorization-system-design-d96f5d7bc6674c7a8b1cca4f6b93c164"))
 
