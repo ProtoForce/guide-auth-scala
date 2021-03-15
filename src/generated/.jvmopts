@@ -1,0 +1,4 @@
+-Xmx2G
+-XX:+UseG1GC
+-XX:MaxMetaspaceSize=1512m
+             
