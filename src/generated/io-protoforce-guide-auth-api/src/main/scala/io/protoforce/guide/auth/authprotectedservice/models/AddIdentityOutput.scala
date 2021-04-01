@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authprotectedservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -65,7 +65,7 @@ object AddIdentityOutput {
     
     implicit final class Conversions(
       val _value: AddIdentityOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[AddIdentityOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[AddIdentityOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[AddIdentityOutput.InternalErrorRef] = new IRTRandomGen[AddIdentityOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/AddIdentityOutput:InternalError"
@@ -100,7 +100,7 @@ object AddIdentityOutput {
     
     implicit final class Conversions(
       val _value: AddIdentityOutput.ForbiddenErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[AddIdentityOutput.ForbiddenErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[AddIdentityOutput.ForbiddenErrorRef]
     
     implicit val ForbiddenError_random: IRTRandomGen[AddIdentityOutput.ForbiddenErrorRef] = new IRTRandomGen[AddIdentityOutput.ForbiddenErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/AddIdentityOutput:ForbiddenError"
@@ -135,7 +135,7 @@ object AddIdentityOutput {
     
     implicit final class Conversions(
       val _value: AddIdentityOutput.AlreadyExistsErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[AddIdentityOutput.AlreadyExistsErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[AddIdentityOutput.AlreadyExistsErrorRef]
     
     implicit val AlreadyExistsError_random: IRTRandomGen[AddIdentityOutput.AlreadyExistsErrorRef] = new IRTRandomGen[AddIdentityOutput.AlreadyExistsErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/AddIdentityOutput:AlreadyExistsError"

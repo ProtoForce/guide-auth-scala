@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -28,12 +28,12 @@ class NotFoundError(
 object NotFoundError {
   implicit final class Conversions(
     val _value: NotFoundError
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[NotFoundError]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[NotFoundError]
   
   /**
     * conversion:nominal-sibling-upcast
     */
-  implicit object Copy_NotFoundError_to_InternalError_Upcast_Reliable_1868494215 extends _root_.izumi.idealingua.runtime.IRTCast[NotFoundError, InternalError] {
+  implicit object Copy_NotFoundError_to_InternalError_Upcast_Reliable_1868494215 extends _root_.io.protoforce.runtime.IRTCast[NotFoundError, InternalError] {
     def convert(from: NotFoundError): InternalError = new InternalError(
       message = from.message
     )
@@ -42,7 +42,7 @@ object NotFoundError {
   /**
     * conversion:nominal-sibling-upcast
     */
-  implicit object Copy_NotFoundError_to_ForbiddenError_Upcast_Reliable_1051322083 extends _root_.izumi.idealingua.runtime.IRTCast[NotFoundError, ForbiddenError] {
+  implicit object Copy_NotFoundError_to_ForbiddenError_Upcast_Reliable_1051322083 extends _root_.io.protoforce.runtime.IRTCast[NotFoundError, ForbiddenError] {
     def convert(from: NotFoundError): ForbiddenError = new ForbiddenError(
       message = from.message
     )
@@ -51,7 +51,7 @@ object NotFoundError {
   /**
     * conversion:nominal-sibling-upcast
     */
-  implicit object Copy_NotFoundError_to_AlreadyExistsError_Upcast_Reliable_1645732128 extends _root_.izumi.idealingua.runtime.IRTCast[NotFoundError, AlreadyExistsError] {
+  implicit object Copy_NotFoundError_to_AlreadyExistsError_Upcast_Reliable_1645732128 extends _root_.io.protoforce.runtime.IRTCast[NotFoundError, AlreadyExistsError] {
     def convert(from: NotFoundError): AlreadyExistsError = new AlreadyExistsError(
       message = from.message
     )
@@ -60,7 +60,7 @@ object NotFoundError {
   /**
     * conversion:nominal-structure-upcast
     */
-  implicit object Copy_NotFoundError_to_IRTErrorAuth_Upcast_Reliable_1455554942 extends _root_.izumi.idealingua.runtime.IRTCast[NotFoundError, IRTErrorAuth] {
+  implicit object Copy_NotFoundError_to_IRTErrorAuth_Upcast_Reliable_1455554942 extends _root_.io.protoforce.runtime.IRTCast[NotFoundError, IRTErrorAuth] {
     def convert(from: NotFoundError): IRTErrorAuth = new IRTErrorAuth(
       message = from.message
     )

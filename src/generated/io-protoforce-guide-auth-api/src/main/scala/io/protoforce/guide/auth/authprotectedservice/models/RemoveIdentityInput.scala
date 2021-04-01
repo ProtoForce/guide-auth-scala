@@ -1,11 +1,11 @@
 package io.protoforce.guide.auth.authprotectedservice.models
 
 import _root_.io.protoforce.guide.auth.SecondaryIdentity
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -41,7 +41,7 @@ object RemoveIdentityInput {
   
   implicit final class Conversions(
     val _value: RemoveIdentityInput
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[RemoveIdentityInput]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[RemoveIdentityInput]
   
   implicit val RemoveIdentityInput_random: IRTRandomGen[RemoveIdentityInput] = new IRTRandomGen[RemoveIdentityInput]{
     def id: String = "io.protoforce.guide.auth.authprotectedservice.models:RemoveIdentityInput"

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -56,7 +56,7 @@ object ChangePasswordOutput {
     
     implicit final class Conversions(
       val _value: ChangePasswordOutput.NotFoundErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[ChangePasswordOutput.NotFoundErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[ChangePasswordOutput.NotFoundErrorRef]
     
     implicit val NotFoundError_random: IRTRandomGen[ChangePasswordOutput.NotFoundErrorRef] = new IRTRandomGen[ChangePasswordOutput.NotFoundErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/ChangePasswordOutput:NotFoundError"
@@ -91,7 +91,7 @@ object ChangePasswordOutput {
     
     implicit final class Conversions(
       val _value: ChangePasswordOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[ChangePasswordOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[ChangePasswordOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[ChangePasswordOutput.InternalErrorRef] = new IRTRandomGen[ChangePasswordOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/ChangePasswordOutput:InternalError"

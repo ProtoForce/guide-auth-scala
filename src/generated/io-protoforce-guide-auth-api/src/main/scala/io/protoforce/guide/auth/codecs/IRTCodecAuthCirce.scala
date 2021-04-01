@@ -66,8 +66,8 @@ import _root_.io.protoforce.guide.auth.authservice.models.{
   SignupInput,
   SignupOutput
 }
-import _root_.izumi.idealingua.runtime.codecs.IRTCodec.IRTCodecFailure
-import _root_.izumi.idealingua.runtime.codecs.circe.IRTDomainCodecCirceJson
+import _root_.io.protoforce.runtime.codecs.IRTCodec.IRTCodecFailure
+import _root_.io.protoforce.runtime.codecs.circe.IRTDomainCodecCirceJson
 import _root_.java.util.UUID
 import _root_.scala.{
   Boolean,
@@ -1783,7 +1783,7 @@ trait IRTCodecAuthCirce extends IRTCodecAuthAbstract[Json] with IRTDomainCodecCi
 }
 
 object IRTCodecAuthCirce {
-  object DefaultCodec extends IRTCodecAuthCirce with _root_.izumi.idealingua.runtime.codecs.circe.IRTDomainCodecCirceString {
+  object DefaultCodec extends IRTCodecAuthCirce with _root_.io.protoforce.runtime.codecs.circe.IRTDomainCodecCirceString {
     
   }
 }

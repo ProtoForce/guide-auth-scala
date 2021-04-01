@@ -1,11 +1,11 @@
 package io.protoforce.guide.auth.authservice.models
 
 import _root_.io.protoforce.guide.auth.SignUp
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -41,7 +41,7 @@ object SignupInput {
   
   implicit final class Conversions(
     val _value: SignupInput
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignupInput]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[SignupInput]
   
   implicit val SignupInput_random: IRTRandomGen[SignupInput] = new IRTRandomGen[SignupInput]{
     def id: String = "io.protoforce.guide.auth.authservice.models:SignupInput"

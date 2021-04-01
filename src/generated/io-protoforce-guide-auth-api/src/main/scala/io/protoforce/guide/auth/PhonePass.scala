@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -54,9 +54,9 @@ object PhonePass {
   
   implicit final class Conversions(
     val _value: PhonePass
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[PhonePass]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[PhonePass]
   
-  implicit object Expand_PhonePass_into_Phone_StructuralDowncast_Reliable_1968942498 extends _root_.izumi.idealingua.runtime.IRTExtend[PhonePass, SignUp.Phone] {
+  implicit object Expand_PhonePass_into_Phone_StructuralDowncast_Reliable_1968942498 extends _root_.io.protoforce.runtime.IRTExtend[PhonePass, SignUp.Phone] {
     final class Expand(
       val _value: PhonePass
     ) extends _root_.scala.AnyVal {

@@ -1,19 +1,19 @@
 package io.protoforce.guide.auth.authprotectedservice
 
-import _root_.izumi.idealingua.model.typer.IRTRestSpec
-import _root_.izumi.idealingua.model.typer.IRTRestSpec.{
+import _root_.io.protoforce.model.typer.IRTRestSpec
+import _root_.io.protoforce.model.typer.IRTRestSpec.{
   IRTBasicField,
   IRTBodyParameter,
   IRTBodySpec,
   IRTExtractorSpec
 }
-import _root_.izumi.idealingua.model.typer.IRTRestSpec.IRTPathSegment.Word
-import _root_.izumi.idealingua.model.typer.SharedRestSpec.HttpMethod.{
+import _root_.io.protoforce.model.typer.IRTRestSpec.IRTPathSegment.Word
+import _root_.io.protoforce.model.typer.SharedRestSpec.HttpMethod.{
   Delete,
   Get,
   Post
 }
-import _root_.izumi.idealingua.runtime.transport.dispatch.server.GeneratedServerBase.{
+import _root_.io.protoforce.runtime.transport.dispatch.server.GeneratedServerBase.{
   MethodId,
   MethodName,
   ServiceName

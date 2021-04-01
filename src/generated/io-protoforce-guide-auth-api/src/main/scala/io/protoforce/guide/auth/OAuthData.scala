@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -46,12 +46,12 @@ object OAuthData {
   
   implicit final class Conversions(
     val _value: OAuthData
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[OAuthData]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[OAuthData]
   
   /**
     * conversion:interface-clone
     */
-  implicit object Copy_OAuthData_to_OAuthData_StructuralSibling_Reliable_1831985658 extends _root_.izumi.idealingua.runtime.IRTCast[OAuthData, OAuthData.Impl] {
+  implicit object Copy_OAuthData_to_OAuthData_StructuralSibling_Reliable_1831985658 extends _root_.io.protoforce.runtime.IRTCast[OAuthData, OAuthData.Impl] {
     def convert(from: OAuthData): OAuthData.Impl = new OAuthData.Impl(
       accessToken = from.accessToken
     )
@@ -60,13 +60,13 @@ object OAuthData {
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_OAuthData_to_GoogleAuth_StructuralDowncast_Reliable_577073138 extends _root_.izumi.idealingua.runtime.IRTCast[OAuthData, GoogleAuth] {
+  implicit object Copy_OAuthData_to_GoogleAuth_StructuralDowncast_Reliable_577073138 extends _root_.io.protoforce.runtime.IRTCast[OAuthData, GoogleAuth] {
     def convert(from: OAuthData): GoogleAuth = new GoogleAuth(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_OAuthData_into_Facebook_StructuralDowncast_Reliable_1201240165 extends _root_.izumi.idealingua.runtime.IRTExtend[OAuthData, SignUp.Facebook] {
+  implicit object Expand_OAuthData_into_Facebook_StructuralDowncast_Reliable_1201240165 extends _root_.io.protoforce.runtime.IRTExtend[OAuthData, SignUp.Facebook] {
     final class Expand(
       val _value: OAuthData
     ) extends _root_.scala.AnyVal {
@@ -86,13 +86,13 @@ object OAuthData {
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_OAuthData_to_TwitterAuth_StructuralDowncast_Reliable_1922206714 extends _root_.izumi.idealingua.runtime.IRTCast[OAuthData, TwitterAuth] {
+  implicit object Copy_OAuthData_to_TwitterAuth_StructuralDowncast_Reliable_1922206714 extends _root_.io.protoforce.runtime.IRTCast[OAuthData, TwitterAuth] {
     def convert(from: OAuthData): TwitterAuth = new TwitterAuth(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_OAuthData_into_Google_StructuralDowncast_Reliable_301178454 extends _root_.izumi.idealingua.runtime.IRTExtend[OAuthData, SignUp.Google] {
+  implicit object Expand_OAuthData_into_Google_StructuralDowncast_Reliable_301178454 extends _root_.io.protoforce.runtime.IRTExtend[OAuthData, SignUp.Google] {
     final class Expand(
       val _value: OAuthData
     ) extends _root_.scala.AnyVal {
@@ -109,7 +109,7 @@ object OAuthData {
     )
   }
   
-  implicit object Expand_OAuthData_into_Github_StructuralDowncast_Reliable_1175812989 extends _root_.izumi.idealingua.runtime.IRTExtend[OAuthData, SignUp.Github] {
+  implicit object Expand_OAuthData_into_Github_StructuralDowncast_Reliable_1175812989 extends _root_.io.protoforce.runtime.IRTExtend[OAuthData, SignUp.Github] {
     final class Expand(
       val _value: OAuthData
     ) extends _root_.scala.AnyVal {
@@ -129,7 +129,7 @@ object OAuthData {
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_OAuthData_to_FacebookAuth_StructuralDowncast_Reliable_96787983 extends _root_.izumi.idealingua.runtime.IRTCast[OAuthData, FacebookAuth] {
+  implicit object Copy_OAuthData_to_FacebookAuth_StructuralDowncast_Reliable_96787983 extends _root_.io.protoforce.runtime.IRTCast[OAuthData, FacebookAuth] {
     def convert(from: OAuthData): FacebookAuth = new FacebookAuth(
       accessToken = from.accessToken
     )
@@ -138,13 +138,13 @@ object OAuthData {
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_OAuthData_to_GithubAuth_StructuralDowncast_Reliable_1624006738 extends _root_.izumi.idealingua.runtime.IRTCast[OAuthData, GithubAuth] {
+  implicit object Copy_OAuthData_to_GithubAuth_StructuralDowncast_Reliable_1624006738 extends _root_.io.protoforce.runtime.IRTCast[OAuthData, GithubAuth] {
     def convert(from: OAuthData): GithubAuth = new GithubAuth(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_OAuthData_into_Twitter_StructuralDowncast_Reliable_1838776839 extends _root_.izumi.idealingua.runtime.IRTExtend[OAuthData, SignUp.Twitter] {
+  implicit object Expand_OAuthData_into_Twitter_StructuralDowncast_Reliable_1838776839 extends _root_.io.protoforce.runtime.IRTExtend[OAuthData, SignUp.Twitter] {
     final class Expand(
       val _value: OAuthData
     ) extends _root_.scala.AnyVal {

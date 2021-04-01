@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -38,7 +38,7 @@ object EmailServerConfig {
   
   implicit final class Conversions(
     val _value: EmailServerConfig
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[EmailServerConfig]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[EmailServerConfig]
   
   implicit val EmailServerConfig_random: IRTRandomGen[EmailServerConfig] = new IRTRandomGen[EmailServerConfig]{
     def id: String = "io.protoforce.guide.auth:EmailServerConfig"

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -56,7 +56,7 @@ object SigninOutput {
     
     implicit final class Conversions(
       val _value: SigninOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SigninOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SigninOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[SigninOutput.InternalErrorRef] = new IRTRandomGen[SigninOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/SigninOutput:InternalError"
@@ -91,7 +91,7 @@ object SigninOutput {
     
     implicit final class Conversions(
       val _value: SigninOutput.NotFoundErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SigninOutput.NotFoundErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SigninOutput.NotFoundErrorRef]
     
     implicit val NotFoundError_random: IRTRandomGen[SigninOutput.NotFoundErrorRef] = new IRTRandomGen[SigninOutput.NotFoundErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/SigninOutput:NotFoundError"

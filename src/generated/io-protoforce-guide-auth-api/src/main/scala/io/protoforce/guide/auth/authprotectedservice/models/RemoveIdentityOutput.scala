@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authprotectedservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -65,7 +65,7 @@ object RemoveIdentityOutput {
     
     implicit final class Conversions(
       val _value: RemoveIdentityOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[RemoveIdentityOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[RemoveIdentityOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[RemoveIdentityOutput.InternalErrorRef] = new IRTRandomGen[RemoveIdentityOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/RemoveIdentityOutput:InternalError"
@@ -100,7 +100,7 @@ object RemoveIdentityOutput {
     
     implicit final class Conversions(
       val _value: RemoveIdentityOutput.NotFoundErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[RemoveIdentityOutput.NotFoundErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[RemoveIdentityOutput.NotFoundErrorRef]
     
     implicit val NotFoundError_random: IRTRandomGen[RemoveIdentityOutput.NotFoundErrorRef] = new IRTRandomGen[RemoveIdentityOutput.NotFoundErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/RemoveIdentityOutput:NotFoundError"
@@ -135,7 +135,7 @@ object RemoveIdentityOutput {
     
     implicit final class Conversions(
       val _value: RemoveIdentityOutput.ForbiddenErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[RemoveIdentityOutput.ForbiddenErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[RemoveIdentityOutput.ForbiddenErrorRef]
     
     implicit val ForbiddenError_random: IRTRandomGen[RemoveIdentityOutput.ForbiddenErrorRef] = new IRTRandomGen[RemoveIdentityOutput.ForbiddenErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/RemoveIdentityOutput:ForbiddenError"

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -80,7 +80,7 @@ object UserLookup {
     
     implicit final class Conversions(
       val _value: UserLookup.Email
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[UserLookup.Email]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[UserLookup.Email]
     
     implicit val Email_random: IRTRandomGen[UserLookup.Email] = new IRTRandomGen[UserLookup.Email]{
       def id: String = "io.protoforce.guide.auth/UserLookup:Email"
@@ -114,7 +114,7 @@ object UserLookup {
     
     implicit final class Conversions(
       val _value: UserLookup.UserIDRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[UserLookup.UserIDRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[UserLookup.UserIDRef]
     
     implicit val UserID_random: IRTRandomGen[UserLookup.UserIDRef] = new IRTRandomGen[UserLookup.UserIDRef]{
       def id: String = "io.protoforce.guide.auth/UserLookup:UserID"
@@ -145,7 +145,7 @@ object UserLookup {
     
     implicit final class Conversions(
       val _value: UserLookup.Phone
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[UserLookup.Phone]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[UserLookup.Phone]
     
     implicit val Phone_random: IRTRandomGen[UserLookup.Phone] = new IRTRandomGen[UserLookup.Phone]{
       def id: String = "io.protoforce.guide.auth/UserLookup:Phone"

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -153,7 +153,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.TwitterAuthRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.TwitterAuthRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.TwitterAuthRef]
     
     implicit val TwitterAuth_random: IRTRandomGen[SignIn.TwitterAuthRef] = new IRTRandomGen[SignIn.TwitterAuthRef]{
       def id: String = "io.protoforce.guide.auth/SignIn:TwitterAuth"
@@ -194,7 +194,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.FacebookAuthRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.FacebookAuthRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.FacebookAuthRef]
     
     implicit val FacebookAuth_random: IRTRandomGen[SignIn.FacebookAuthRef] = new IRTRandomGen[SignIn.FacebookAuthRef]{
       def id: String = "io.protoforce.guide.auth/SignIn:FacebookAuth"
@@ -235,7 +235,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.GithubAuthRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.GithubAuthRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.GithubAuthRef]
     
     implicit val GithubAuth_random: IRTRandomGen[SignIn.GithubAuthRef] = new IRTRandomGen[SignIn.GithubAuthRef]{
       def id: String = "io.protoforce.guide.auth/SignIn:GithubAuth"
@@ -276,7 +276,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.PhonePassRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.PhonePassRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.PhonePassRef]
     
     implicit val PhonePass_random: IRTRandomGen[SignIn.PhonePassRef] = new IRTRandomGen[SignIn.PhonePassRef]{
       def id: String = "io.protoforce.guide.auth/SignIn:PhonePass"
@@ -322,7 +322,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.TwoFactor
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.TwoFactor]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.TwoFactor]
     
     implicit val TwoFactor_random: IRTRandomGen[SignIn.TwoFactor] = new IRTRandomGen[SignIn.TwoFactor]{
       def id: String = "io.protoforce.guide.auth/SignIn:TwoFactor"
@@ -357,7 +357,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.GoogleAuthRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.GoogleAuthRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.GoogleAuthRef]
     
     implicit val GoogleAuth_random: IRTRandomGen[SignIn.GoogleAuthRef] = new IRTRandomGen[SignIn.GoogleAuthRef]{
       def id: String = "io.protoforce.guide.auth/SignIn:GoogleAuth"
@@ -398,7 +398,7 @@ object SignIn {
     
     implicit final class Conversions(
       val _value: SignIn.EmailPassRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignIn.EmailPassRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignIn.EmailPassRef]
     
     implicit val EmailPass_random: IRTRandomGen[SignIn.EmailPassRef] = new IRTRandomGen[SignIn.EmailPassRef]{
       def id: String = "io.protoforce.guide.auth/SignIn:EmailPass"

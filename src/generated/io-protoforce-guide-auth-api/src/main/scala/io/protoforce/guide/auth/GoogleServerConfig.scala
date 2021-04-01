@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -38,12 +38,12 @@ object GoogleServerConfig {
   
   implicit final class Conversions(
     val _value: GoogleServerConfig
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[GoogleServerConfig]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[GoogleServerConfig]
   
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_GoogleServerConfig_to_GoogleClientConfig_StructuralUpcast_Reliable_1629570748 extends _root_.izumi.idealingua.runtime.IRTCast[GoogleServerConfig, GoogleClientConfig] {
+  implicit object Copy_GoogleServerConfig_to_GoogleClientConfig_StructuralUpcast_Reliable_1629570748 extends _root_.io.protoforce.runtime.IRTCast[GoogleServerConfig, GoogleClientConfig] {
     def convert(from: GoogleServerConfig): GoogleClientConfig = new GoogleClientConfig(
       clientId = from.clientId,
       redirectUrl = from.redirectUrl

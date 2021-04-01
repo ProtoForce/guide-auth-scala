@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -34,18 +34,18 @@ object SignupAttributes {
   
   implicit final class Conversions(
     val _value: SignupAttributes
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignupAttributes]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[SignupAttributes]
   
   /**
     * conversion:interface-clone
     */
-  implicit object Copy_SignupAttributes_to_SignupAttributes_StructuralSibling_Reliable_2042764540 extends _root_.izumi.idealingua.runtime.IRTCast[SignupAttributes, SignupAttributes.Impl] {
+  implicit object Copy_SignupAttributes_to_SignupAttributes_StructuralSibling_Reliable_2042764540 extends _root_.io.protoforce.runtime.IRTCast[SignupAttributes, SignupAttributes.Impl] {
     def convert(from: SignupAttributes): SignupAttributes.Impl = new SignupAttributes.Impl(
       timezone = from.timezone
     )
   }
   
-  implicit object Expand_SignupAttributes_into_Twitter_StructuralDowncast_Reliable_414096250 extends _root_.izumi.idealingua.runtime.IRTExtend[SignupAttributes, SignUp.Twitter] {
+  implicit object Expand_SignupAttributes_into_Twitter_StructuralDowncast_Reliable_414096250 extends _root_.io.protoforce.runtime.IRTExtend[SignupAttributes, SignUp.Twitter] {
     final class Expand(
       val _value: SignupAttributes
     ) extends _root_.scala.AnyVal {
@@ -62,7 +62,7 @@ object SignupAttributes {
     )
   }
   
-  implicit object Expand_SignupAttributes_into_Phone_StructuralDowncast_Reliable_2068536985 extends _root_.izumi.idealingua.runtime.IRTExtend[SignupAttributes, SignUp.Phone] {
+  implicit object Expand_SignupAttributes_into_Phone_StructuralDowncast_Reliable_2068536985 extends _root_.io.protoforce.runtime.IRTExtend[SignupAttributes, SignUp.Phone] {
     final class Expand(
       val _value: SignupAttributes
     ) extends _root_.scala.AnyVal {
@@ -80,7 +80,7 @@ object SignupAttributes {
     )
   }
   
-  implicit object Expand_SignupAttributes_into_Email_StructuralDowncast_Reliable_877988497 extends _root_.izumi.idealingua.runtime.IRTExtend[SignupAttributes, SignUp.Email] {
+  implicit object Expand_SignupAttributes_into_Email_StructuralDowncast_Reliable_877988497 extends _root_.io.protoforce.runtime.IRTExtend[SignupAttributes, SignUp.Email] {
     final class Expand(
       val _value: SignupAttributes
     ) extends _root_.scala.AnyVal {
@@ -98,7 +98,7 @@ object SignupAttributes {
     )
   }
   
-  implicit object Expand_SignupAttributes_into_Facebook_StructuralDowncast_Reliable_840854042 extends _root_.izumi.idealingua.runtime.IRTExtend[SignupAttributes, SignUp.Facebook] {
+  implicit object Expand_SignupAttributes_into_Facebook_StructuralDowncast_Reliable_840854042 extends _root_.io.protoforce.runtime.IRTExtend[SignupAttributes, SignUp.Facebook] {
     final class Expand(
       val _value: SignupAttributes
     ) extends _root_.scala.AnyVal {
@@ -115,7 +115,7 @@ object SignupAttributes {
     )
   }
   
-  implicit object Expand_SignupAttributes_into_Github_StructuralDowncast_Reliable_1077060100 extends _root_.izumi.idealingua.runtime.IRTExtend[SignupAttributes, SignUp.Github] {
+  implicit object Expand_SignupAttributes_into_Github_StructuralDowncast_Reliable_1077060100 extends _root_.io.protoforce.runtime.IRTExtend[SignupAttributes, SignUp.Github] {
     final class Expand(
       val _value: SignupAttributes
     ) extends _root_.scala.AnyVal {
@@ -132,7 +132,7 @@ object SignupAttributes {
     )
   }
   
-  implicit object Expand_SignupAttributes_into_Google_StructuralDowncast_Reliable_1951694635 extends _root_.izumi.idealingua.runtime.IRTExtend[SignupAttributes, SignUp.Google] {
+  implicit object Expand_SignupAttributes_into_Google_StructuralDowncast_Reliable_1951694635 extends _root_.io.protoforce.runtime.IRTExtend[SignupAttributes, SignUp.Google] {
     final class Expand(
       val _value: SignupAttributes
     ) extends _root_.scala.AnyVal {

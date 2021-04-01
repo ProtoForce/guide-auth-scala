@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authprotectedservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -40,7 +40,7 @@ object Disable2FAInput {
   
   implicit final class Conversions(
     val _value: Disable2FAInput
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[Disable2FAInput]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[Disable2FAInput]
   
   implicit val Disable2FAInput_random: IRTRandomGen[Disable2FAInput] = new IRTRandomGen[Disable2FAInput]{
     def id: String = "io.protoforce.guide.auth.authprotectedservice.models:Disable2FAInput"

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -28,12 +28,12 @@ class AlreadyExistsError(
 object AlreadyExistsError {
   implicit final class Conversions(
     val _value: AlreadyExistsError
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[AlreadyExistsError]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[AlreadyExistsError]
   
   /**
     * conversion:nominal-sibling-upcast
     */
-  implicit object Copy_AlreadyExistsError_to_NotFoundError_Upcast_Reliable_1645732128 extends _root_.izumi.idealingua.runtime.IRTCast[AlreadyExistsError, NotFoundError] {
+  implicit object Copy_AlreadyExistsError_to_NotFoundError_Upcast_Reliable_1645732128 extends _root_.io.protoforce.runtime.IRTCast[AlreadyExistsError, NotFoundError] {
     def convert(from: AlreadyExistsError): NotFoundError = new NotFoundError(
       message = from.message
     )
@@ -42,7 +42,7 @@ object AlreadyExistsError {
   /**
     * conversion:nominal-sibling-upcast
     */
-  implicit object Copy_AlreadyExistsError_to_InternalError_Upcast_Reliable_129362345 extends _root_.izumi.idealingua.runtime.IRTCast[AlreadyExistsError, InternalError] {
+  implicit object Copy_AlreadyExistsError_to_InternalError_Upcast_Reliable_129362345 extends _root_.io.protoforce.runtime.IRTCast[AlreadyExistsError, InternalError] {
     def convert(from: AlreadyExistsError): InternalError = new InternalError(
       message = from.message
     )
@@ -51,7 +51,7 @@ object AlreadyExistsError {
   /**
     * conversion:nominal-sibling-upcast
     */
-  implicit object Copy_AlreadyExistsError_to_ForbiddenError_Upcast_Reliable_1245788653 extends _root_.izumi.idealingua.runtime.IRTCast[AlreadyExistsError, ForbiddenError] {
+  implicit object Copy_AlreadyExistsError_to_ForbiddenError_Upcast_Reliable_1245788653 extends _root_.io.protoforce.runtime.IRTCast[AlreadyExistsError, ForbiddenError] {
     def convert(from: AlreadyExistsError): ForbiddenError = new ForbiddenError(
       message = from.message
     )
@@ -60,7 +60,7 @@ object AlreadyExistsError {
   /**
     * conversion:nominal-structure-upcast
     */
-  implicit object Copy_AlreadyExistsError_to_IRTErrorAuth_Upcast_Reliable_542301618 extends _root_.izumi.idealingua.runtime.IRTCast[AlreadyExistsError, IRTErrorAuth] {
+  implicit object Copy_AlreadyExistsError_to_IRTErrorAuth_Upcast_Reliable_542301618 extends _root_.io.protoforce.runtime.IRTCast[AlreadyExistsError, IRTErrorAuth] {
     def convert(from: AlreadyExistsError): IRTErrorAuth = new IRTErrorAuth(
       message = from.message
     )

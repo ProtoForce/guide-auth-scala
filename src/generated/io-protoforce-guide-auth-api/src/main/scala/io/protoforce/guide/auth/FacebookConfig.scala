@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -34,7 +34,7 @@ object FacebookConfig {
   
   implicit final class Conversions(
     val _value: FacebookConfig
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[FacebookConfig]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[FacebookConfig]
   
   implicit val FacebookConfig_random: IRTRandomGen[FacebookConfig] = new IRTRandomGen[FacebookConfig]{
     def id: String = "io.protoforce.guide.auth:FacebookConfig"

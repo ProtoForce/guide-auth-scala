@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -46,12 +46,12 @@ object TwitterAuth {
   
   implicit final class Conversions(
     val _value: TwitterAuth
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[TwitterAuth]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[TwitterAuth]
   
   /**
     * conversion:structural-sibling-upcast
     */
-  implicit object Copy_TwitterAuth_to_FacebookAuth_StructuralUpcast_Reliable_443986941 extends _root_.izumi.idealingua.runtime.IRTCast[TwitterAuth, FacebookAuth] {
+  implicit object Copy_TwitterAuth_to_FacebookAuth_StructuralUpcast_Reliable_443986941 extends _root_.io.protoforce.runtime.IRTCast[TwitterAuth, FacebookAuth] {
     def convert(from: TwitterAuth): FacebookAuth = new FacebookAuth(
       accessToken = from.accessToken
     )
@@ -60,7 +60,7 @@ object TwitterAuth {
   /**
     * conversion:structural-sibling-upcast
     */
-  implicit object Copy_TwitterAuth_to_GithubAuth_StructuralUpcast_Reliable_2130185634 extends _root_.izumi.idealingua.runtime.IRTCast[TwitterAuth, GithubAuth] {
+  implicit object Copy_TwitterAuth_to_GithubAuth_StructuralUpcast_Reliable_2130185634 extends _root_.io.protoforce.runtime.IRTCast[TwitterAuth, GithubAuth] {
     def convert(from: TwitterAuth): GithubAuth = new GithubAuth(
       accessToken = from.accessToken
     )
@@ -69,13 +69,13 @@ object TwitterAuth {
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_TwitterAuth_to_OAuthData_StructuralUpcast_Reliable_1922206714 extends _root_.izumi.idealingua.runtime.IRTCast[TwitterAuth, OAuthData.Impl] {
+  implicit object Copy_TwitterAuth_to_OAuthData_StructuralUpcast_Reliable_1922206714 extends _root_.io.protoforce.runtime.IRTCast[TwitterAuth, OAuthData.Impl] {
     def convert(from: TwitterAuth): OAuthData.Impl = new OAuthData.Impl(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_TwitterAuth_into_Facebook_StructuralUpcast_Reliable_1742015089 extends _root_.izumi.idealingua.runtime.IRTExtend[TwitterAuth, SignUp.Facebook] {
+  implicit object Expand_TwitterAuth_into_Facebook_StructuralUpcast_Reliable_1742015089 extends _root_.io.protoforce.runtime.IRTExtend[TwitterAuth, SignUp.Facebook] {
     final class Expand(
       val _value: TwitterAuth
     ) extends _root_.scala.AnyVal {
@@ -95,13 +95,13 @@ object TwitterAuth {
   /**
     * conversion:structural-sibling-upcast
     */
-  implicit object Copy_TwitterAuth_to_GoogleAuth_StructuralUpcast_Reliable_1117848062 extends _root_.izumi.idealingua.runtime.IRTCast[TwitterAuth, GoogleAuth] {
+  implicit object Copy_TwitterAuth_to_GoogleAuth_StructuralUpcast_Reliable_1117848062 extends _root_.io.protoforce.runtime.IRTCast[TwitterAuth, GoogleAuth] {
     def convert(from: TwitterAuth): GoogleAuth = new GoogleAuth(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_TwitterAuth_into_Google_StructuralUpcast_Reliable_239596470 extends _root_.izumi.idealingua.runtime.IRTExtend[TwitterAuth, SignUp.Google] {
+  implicit object Expand_TwitterAuth_into_Google_StructuralUpcast_Reliable_239596470 extends _root_.io.protoforce.runtime.IRTExtend[TwitterAuth, SignUp.Google] {
     final class Expand(
       val _value: TwitterAuth
     ) extends _root_.scala.AnyVal {
@@ -118,7 +118,7 @@ object TwitterAuth {
     )
   }
   
-  implicit object Expand_TwitterAuth_into_Twitter_StructuralDowncast_Reliable_1298001915 extends _root_.izumi.idealingua.runtime.IRTExtend[TwitterAuth, SignUp.Twitter] {
+  implicit object Expand_TwitterAuth_into_Twitter_StructuralDowncast_Reliable_1298001915 extends _root_.io.protoforce.runtime.IRTExtend[TwitterAuth, SignUp.Twitter] {
     final class Expand(
       val _value: TwitterAuth
     ) extends _root_.scala.AnyVal {
@@ -135,7 +135,7 @@ object TwitterAuth {
     )
   }
   
-  implicit object Expand_TwitterAuth_into_Github_StructuralUpcast_Reliable_635038065 extends _root_.izumi.idealingua.runtime.IRTExtend[TwitterAuth, SignUp.Github] {
+  implicit object Expand_TwitterAuth_into_Github_StructuralUpcast_Reliable_635038065 extends _root_.io.protoforce.runtime.IRTExtend[TwitterAuth, SignUp.Github] {
     final class Expand(
       val _value: TwitterAuth
     ) extends _root_.scala.AnyVal {

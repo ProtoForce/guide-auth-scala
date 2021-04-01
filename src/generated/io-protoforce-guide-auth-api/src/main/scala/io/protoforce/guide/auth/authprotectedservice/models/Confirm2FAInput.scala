@@ -1,11 +1,11 @@
 package io.protoforce.guide.auth.authprotectedservice.models
 
 import _root_.io.protoforce.guide.auth.MFAMethodConfirm
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -41,7 +41,7 @@ object Confirm2FAInput {
   
   implicit final class Conversions(
     val _value: Confirm2FAInput
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[Confirm2FAInput]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[Confirm2FAInput]
   
   implicit val Confirm2FAInput_random: IRTRandomGen[Confirm2FAInput] = new IRTRandomGen[Confirm2FAInput]{
     def id: String = "io.protoforce.guide.auth.authprotectedservice.models:Confirm2FAInput"

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authprotectedservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -56,7 +56,7 @@ object Request2FAOutput {
     
     implicit final class Conversions(
       val _value: Request2FAOutput.ForbiddenErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[Request2FAOutput.ForbiddenErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[Request2FAOutput.ForbiddenErrorRef]
     
     implicit val ForbiddenError_random: IRTRandomGen[Request2FAOutput.ForbiddenErrorRef] = new IRTRandomGen[Request2FAOutput.ForbiddenErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/Request2FAOutput:ForbiddenError"
@@ -91,7 +91,7 @@ object Request2FAOutput {
     
     implicit final class Conversions(
       val _value: Request2FAOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[Request2FAOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[Request2FAOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[Request2FAOutput.InternalErrorRef] = new IRTRandomGen[Request2FAOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authprotectedservice.models/Request2FAOutput:InternalError"

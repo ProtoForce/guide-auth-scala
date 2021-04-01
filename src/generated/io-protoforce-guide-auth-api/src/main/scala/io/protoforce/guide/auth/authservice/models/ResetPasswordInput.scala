@@ -1,11 +1,11 @@
 package io.protoforce.guide.auth.authservice.models
 
 import _root_.io.protoforce.guide.auth.UserLookup
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -41,7 +41,7 @@ object ResetPasswordInput {
   
   implicit final class Conversions(
     val _value: ResetPasswordInput
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[ResetPasswordInput]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[ResetPasswordInput]
   
   implicit val ResetPasswordInput_random: IRTRandomGen[ResetPasswordInput] = new IRTRandomGen[ResetPasswordInput]{
     def id: String = "io.protoforce.guide.auth.authservice.models:ResetPasswordInput"

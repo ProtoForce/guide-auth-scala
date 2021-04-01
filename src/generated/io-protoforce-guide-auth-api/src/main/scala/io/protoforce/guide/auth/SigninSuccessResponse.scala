@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -44,7 +44,7 @@ object SigninSuccessResponse {
   
   implicit final class Conversions(
     val _value: SigninSuccessResponse
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[SigninSuccessResponse]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[SigninSuccessResponse]
   
   implicit val SigninSuccessResponse_random: IRTRandomGen[SigninSuccessResponse] = new IRTRandomGen[SigninSuccessResponse]{
     def id: String = "io.protoforce.guide.auth:SigninSuccessResponse"

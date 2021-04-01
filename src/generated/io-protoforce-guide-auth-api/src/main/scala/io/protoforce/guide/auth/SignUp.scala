@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -146,9 +146,9 @@ object SignUp {
     
     implicit final class Conversions(
       val _value: SignUp.Twitter
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignUp.Twitter]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignUp.Twitter]
     
-    implicit object Expand_Twitter_into_Phone_StructuralUpcast_Reliable_597762021 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Twitter, SignUp.Phone] {
+    implicit object Expand_Twitter_into_Phone_StructuralUpcast_Reliable_597762021 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Twitter, SignUp.Phone] {
       final class Expand(
         val _value: SignUp.Twitter
       ) extends _root_.scala.AnyVal {
@@ -169,7 +169,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Twitter_to_Facebook_StructuralUpcast_Reliable_1825444964 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, SignUp.Facebook] {
+    implicit object Copy_Twitter_to_Facebook_StructuralUpcast_Reliable_1825444964 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, SignUp.Facebook] {
       def convert(from: SignUp.Twitter): SignUp.Facebook = new SignUp.Facebook(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -179,14 +179,14 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Twitter_to_Github_StructuralUpcast_Reliable_551608190 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, SignUp.Github] {
+    implicit object Copy_Twitter_to_Github_StructuralUpcast_Reliable_551608190 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, SignUp.Github] {
       def convert(from: SignUp.Twitter): SignUp.Github = new SignUp.Github(
         timezone = from.timezone,
         accessToken = from.accessToken
       )
     }
     
-    implicit object Expand_Twitter_into_Email_StructuralUpcast_Reliable_750679793 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Twitter, SignUp.Email] {
+    implicit object Expand_Twitter_into_Email_StructuralUpcast_Reliable_750679793 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Twitter, SignUp.Email] {
       final class Expand(
         val _value: SignUp.Twitter
       ) extends _root_.scala.AnyVal {
@@ -207,7 +207,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Twitter_to_Google_StructuralUpcast_Reliable_323026345 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, SignUp.Google] {
+    implicit object Copy_Twitter_to_Google_StructuralUpcast_Reliable_323026345 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, SignUp.Google] {
       def convert(from: SignUp.Twitter): SignUp.Google = new SignUp.Google(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -217,7 +217,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Twitter_to_OAuthData_StructuralUpcast_Reliable_1838776839 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, OAuthData.Impl] {
+    implicit object Copy_Twitter_to_OAuthData_StructuralUpcast_Reliable_1838776839 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, OAuthData.Impl] {
       def convert(from: SignUp.Twitter): OAuthData.Impl = new OAuthData.Impl(
         accessToken = from.accessToken
       )
@@ -226,7 +226,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Twitter_to_GithubAuth_StructuralUpcast_Reliable_2046755759 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, GithubAuth] {
+    implicit object Copy_Twitter_to_GithubAuth_StructuralUpcast_Reliable_2046755759 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, GithubAuth] {
       def convert(from: SignUp.Twitter): GithubAuth = new GithubAuth(
         accessToken = from.accessToken
       )
@@ -235,7 +235,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Twitter_to_GoogleAuth_StructuralUpcast_Reliable_1201277937 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, GoogleAuth] {
+    implicit object Copy_Twitter_to_GoogleAuth_StructuralUpcast_Reliable_1201277937 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, GoogleAuth] {
       def convert(from: SignUp.Twitter): GoogleAuth = new GoogleAuth(
         accessToken = from.accessToken
       )
@@ -244,7 +244,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Twitter_to_TwitterAuth_StructuralUpcast_Reliable_1298001915 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, TwitterAuth] {
+    implicit object Copy_Twitter_to_TwitterAuth_StructuralUpcast_Reliable_1298001915 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, TwitterAuth] {
       def convert(from: SignUp.Twitter): TwitterAuth = new TwitterAuth(
         accessToken = from.accessToken
       )
@@ -253,7 +253,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Twitter_to_FacebookAuth_StructuralUpcast_Reliable_527416816 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, FacebookAuth] {
+    implicit object Copy_Twitter_to_FacebookAuth_StructuralUpcast_Reliable_527416816 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, FacebookAuth] {
       def convert(from: SignUp.Twitter): FacebookAuth = new FacebookAuth(
         accessToken = from.accessToken
       )
@@ -262,7 +262,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Twitter_to_SignupAttributes_StructuralUpcast_Reliable_414096250 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Twitter, SignupAttributes.Impl] {
+    implicit object Copy_Twitter_to_SignupAttributes_StructuralUpcast_Reliable_414096250 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Twitter, SignupAttributes.Impl] {
       def convert(from: SignUp.Twitter): SignupAttributes.Impl = new SignupAttributes.Impl(
         timezone = from.timezone
       )
@@ -306,9 +306,9 @@ object SignUp {
     
     implicit final class Conversions(
       val _value: SignUp.Phone
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignUp.Phone]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignUp.Phone]
     
-    implicit object Expand_Phone_into_Twitter_StructuralUpcast_Reliable_597762021 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Phone, SignUp.Twitter] {
+    implicit object Expand_Phone_into_Twitter_StructuralUpcast_Reliable_597762021 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Phone, SignUp.Twitter] {
       final class Expand(
         val _value: SignUp.Phone
       ) extends _root_.scala.AnyVal {
@@ -325,7 +325,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Phone_into_Email_StructuralUpcast_Reliable_1061654268 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Phone, SignUp.Email] {
+    implicit object Expand_Phone_into_Email_StructuralUpcast_Reliable_1061654268 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Phone, SignUp.Email] {
       final class Expand(
         val _value: SignUp.Phone
       ) extends _root_.scala.AnyVal {
@@ -343,7 +343,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Phone_into_Google_StructuralUpcast_Reliable_2135360406 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Phone, SignUp.Google] {
+    implicit object Expand_Phone_into_Google_StructuralUpcast_Reliable_2135360406 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Phone, SignUp.Google] {
       final class Expand(
         val _value: SignUp.Phone
       ) extends _root_.scala.AnyVal {
@@ -360,7 +360,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Phone_into_Facebook_StructuralUpcast_Reliable_657188271 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Phone, SignUp.Facebook] {
+    implicit object Expand_Phone_into_Facebook_StructuralUpcast_Reliable_657188271 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Phone, SignUp.Facebook] {
       final class Expand(
         val _value: SignUp.Phone
       ) extends _root_.scala.AnyVal {
@@ -380,7 +380,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Phone_to_SignupAttributes_StructuralUpcast_Reliable_2068536985 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Phone, SignupAttributes.Impl] {
+    implicit object Copy_Phone_to_SignupAttributes_StructuralUpcast_Reliable_2068536985 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Phone, SignupAttributes.Impl] {
       def convert(from: SignUp.Phone): SignupAttributes.Impl = new SignupAttributes.Impl(
         timezone = from.timezone
       )
@@ -389,14 +389,14 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Phone_to_PhonePass_StructuralUpcast_Reliable_1968942498 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Phone, PhonePass] {
+    implicit object Copy_Phone_to_PhonePass_StructuralUpcast_Reliable_1968942498 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Phone, PhonePass] {
       def convert(from: SignUp.Phone): PhonePass = new PhonePass(
         number = from.number,
         pass = from.pass
       )
     }
     
-    implicit object Expand_Phone_into_Github_StructuralUpcast_Reliable_1260725871 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Phone, SignUp.Github] {
+    implicit object Expand_Phone_into_Github_StructuralUpcast_Reliable_1260725871 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Phone, SignUp.Github] {
       final class Expand(
         val _value: SignUp.Phone
       ) extends _root_.scala.AnyVal {
@@ -449,9 +449,9 @@ object SignUp {
     
     implicit final class Conversions(
       val _value: SignUp.Email
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignUp.Email]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignUp.Email]
     
-    implicit object Expand_Email_into_Twitter_StructuralUpcast_Reliable_750679793 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Email, SignUp.Twitter] {
+    implicit object Expand_Email_into_Twitter_StructuralUpcast_Reliable_750679793 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Email, SignUp.Twitter] {
       final class Expand(
         val _value: SignUp.Email
       ) extends _root_.scala.AnyVal {
@@ -468,7 +468,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Email_into_Phone_StructuralUpcast_Reliable_1061654268 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Email, SignUp.Phone] {
+    implicit object Expand_Email_into_Phone_StructuralUpcast_Reliable_1061654268 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Email, SignUp.Phone] {
       final class Expand(
         val _value: SignUp.Email
       ) extends _root_.scala.AnyVal {
@@ -489,14 +489,14 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Email_to_EmailPass_StructuralUpcast_Reliable_1880248267 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Email, EmailPass] {
+    implicit object Copy_Email_to_EmailPass_StructuralUpcast_Reliable_1880248267 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Email, EmailPass] {
       def convert(from: SignUp.Email): EmailPass = new EmailPass(
         email = from.email,
         pass = from.pass
       )
     }
     
-    implicit object Expand_Email_into_Google_StructuralUpcast_Reliable_786918592 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Email, SignUp.Google] {
+    implicit object Expand_Email_into_Google_StructuralUpcast_Reliable_786918592 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Email, SignUp.Google] {
       final class Expand(
         val _value: SignUp.Email
       ) extends _root_.scala.AnyVal {
@@ -513,7 +513,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Email_into_Github_StructuralUpcast_Reliable_87715943 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Email, SignUp.Github] {
+    implicit object Expand_Email_into_Github_StructuralUpcast_Reliable_87715943 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Email, SignUp.Github] {
       final class Expand(
         val _value: SignUp.Email
       ) extends _root_.scala.AnyVal {
@@ -530,7 +530,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Email_into_Facebook_StructuralUpcast_Reliable_2005630085 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Email, SignUp.Facebook] {
+    implicit object Expand_Email_into_Facebook_StructuralUpcast_Reliable_2005630085 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Email, SignUp.Facebook] {
       final class Expand(
         val _value: SignUp.Email
       ) extends _root_.scala.AnyVal {
@@ -550,7 +550,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Email_to_SignupAttributes_StructuralUpcast_Reliable_877988497 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Email, SignupAttributes.Impl] {
+    implicit object Copy_Email_to_SignupAttributes_StructuralUpcast_Reliable_877988497 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Email, SignupAttributes.Impl] {
       def convert(from: SignUp.Email): SignupAttributes.Impl = new SignupAttributes.Impl(
         timezone = from.timezone
       )
@@ -591,12 +591,12 @@ object SignUp {
     
     implicit final class Conversions(
       val _value: SignUp.Facebook
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignUp.Facebook]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignUp.Facebook]
     
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_GithubAuth_StructuralUpcast_Reliable_993261245 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, GithubAuth] {
+    implicit object Copy_Facebook_to_GithubAuth_StructuralUpcast_Reliable_993261245 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, GithubAuth] {
       def convert(from: SignUp.Facebook): GithubAuth = new GithubAuth(
         accessToken = from.accessToken
       )
@@ -605,7 +605,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_Twitter_StructuralUpcast_Reliable_1825444964 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, SignUp.Twitter] {
+    implicit object Copy_Facebook_to_Twitter_StructuralUpcast_Reliable_1825444964 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, SignUp.Twitter] {
       def convert(from: SignUp.Facebook): SignUp.Twitter = new SignUp.Twitter(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -615,7 +615,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_TwitterAuth_StructuralUpcast_Reliable_1742015089 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, TwitterAuth] {
+    implicit object Copy_Facebook_to_TwitterAuth_StructuralUpcast_Reliable_1742015089 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, TwitterAuth] {
       def convert(from: SignUp.Facebook): TwitterAuth = new TwitterAuth(
         accessToken = from.accessToken
       )
@@ -624,7 +624,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_Google_StructuralUpcast_Reliable_931923947 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, SignUp.Google] {
+    implicit object Copy_Facebook_to_Google_StructuralUpcast_Reliable_931923947 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, SignUp.Google] {
       def convert(from: SignUp.Facebook): SignUp.Google = new SignUp.Google(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -634,7 +634,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_Github_StructuralUpcast_Reliable_1806558482 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, SignUp.Github] {
+    implicit object Copy_Facebook_to_Github_StructuralUpcast_Reliable_1806558482 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, SignUp.Github] {
       def convert(from: SignUp.Facebook): SignUp.Github = new SignUp.Github(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -644,7 +644,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Facebook_to_SignupAttributes_StructuralUpcast_Reliable_840854042 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, SignupAttributes.Impl] {
+    implicit object Copy_Facebook_to_SignupAttributes_StructuralUpcast_Reliable_840854042 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, SignupAttributes.Impl] {
       def convert(from: SignUp.Facebook): SignupAttributes.Impl = new SignupAttributes.Impl(
         timezone = from.timezone
       )
@@ -653,7 +653,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_GoogleAuth_StructuralUpcast_Reliable_53672355 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, GoogleAuth] {
+    implicit object Copy_Facebook_to_GoogleAuth_StructuralUpcast_Reliable_53672355 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, GoogleAuth] {
       def convert(from: SignUp.Facebook): GoogleAuth = new GoogleAuth(
         accessToken = from.accessToken
       )
@@ -662,13 +662,13 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Facebook_to_FacebookAuth_StructuralUpcast_Reliable_727533476 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, FacebookAuth] {
+    implicit object Copy_Facebook_to_FacebookAuth_StructuralUpcast_Reliable_727533476 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, FacebookAuth] {
       def convert(from: SignUp.Facebook): FacebookAuth = new FacebookAuth(
         accessToken = from.accessToken
       )
     }
     
-    implicit object Expand_Facebook_into_Phone_StructuralUpcast_Reliable_657188271 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Facebook, SignUp.Phone] {
+    implicit object Expand_Facebook_into_Phone_StructuralUpcast_Reliable_657188271 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Facebook, SignUp.Phone] {
       final class Expand(
         val _value: SignUp.Facebook
       ) extends _root_.scala.AnyVal {
@@ -686,7 +686,7 @@ object SignUp {
       )
     }
     
-    implicit object Expand_Facebook_into_Email_StructuralUpcast_Reliable_2005630085 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Facebook, SignUp.Email] {
+    implicit object Expand_Facebook_into_Email_StructuralUpcast_Reliable_2005630085 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Facebook, SignUp.Email] {
       final class Expand(
         val _value: SignUp.Facebook
       ) extends _root_.scala.AnyVal {
@@ -707,7 +707,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Facebook_to_OAuthData_StructuralUpcast_Reliable_1201240165 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Facebook, OAuthData.Impl] {
+    implicit object Copy_Facebook_to_OAuthData_StructuralUpcast_Reliable_1201240165 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Facebook, OAuthData.Impl] {
       def convert(from: SignUp.Facebook): OAuthData.Impl = new OAuthData.Impl(
         accessToken = from.accessToken
       )
@@ -747,12 +747,12 @@ object SignUp {
     
     implicit final class Conversions(
       val _value: SignUp.Github
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignUp.Github]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignUp.Github]
     
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Github_to_OAuthData_StructuralUpcast_Reliable_1175812989 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, OAuthData.Impl] {
+    implicit object Copy_Github_to_OAuthData_StructuralUpcast_Reliable_1175812989 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, OAuthData.Impl] {
       def convert(from: SignUp.Github): OAuthData.Impl = new OAuthData.Impl(
         accessToken = from.accessToken
       )
@@ -761,7 +761,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Github_to_TwitterAuth_StructuralUpcast_Reliable_635038065 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, TwitterAuth] {
+    implicit object Copy_Github_to_TwitterAuth_StructuralUpcast_Reliable_635038065 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, TwitterAuth] {
       def convert(from: SignUp.Github): TwitterAuth = new TwitterAuth(
         accessToken = from.accessToken
       )
@@ -770,14 +770,14 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Github_to_Facebook_StructuralUpcast_Reliable_1806558482 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, SignUp.Facebook] {
+    implicit object Copy_Github_to_Facebook_StructuralUpcast_Reliable_1806558482 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, SignUp.Facebook] {
       def convert(from: SignUp.Github): SignUp.Facebook = new SignUp.Facebook(
         timezone = from.timezone,
         accessToken = from.accessToken
       )
     }
     
-    implicit object Expand_Github_into_Phone_StructuralUpcast_Reliable_1260725871 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Github, SignUp.Phone] {
+    implicit object Expand_Github_into_Phone_StructuralUpcast_Reliable_1260725871 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Github, SignUp.Phone] {
       final class Expand(
         val _value: SignUp.Github
       ) extends _root_.scala.AnyVal {
@@ -798,7 +798,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Github_to_SignupAttributes_StructuralUpcast_Reliable_1077060100 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, SignupAttributes.Impl] {
+    implicit object Copy_Github_to_SignupAttributes_StructuralUpcast_Reliable_1077060100 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, SignupAttributes.Impl] {
       def convert(from: SignUp.Github): SignupAttributes.Impl = new SignupAttributes.Impl(
         timezone = from.timezone
       )
@@ -807,7 +807,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Github_to_GoogleAuth_StructuralUpcast_Reliable_1864241787 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, GoogleAuth] {
+    implicit object Copy_Github_to_GoogleAuth_StructuralUpcast_Reliable_1864241787 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, GoogleAuth] {
       def convert(from: SignUp.Github): GoogleAuth = new GoogleAuth(
         accessToken = from.accessToken
       )
@@ -816,14 +816,14 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Github_to_Google_StructuralUpcast_Reliable_985990195 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, SignUp.Google] {
+    implicit object Copy_Github_to_Google_StructuralUpcast_Reliable_985990195 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, SignUp.Google] {
       def convert(from: SignUp.Github): SignUp.Google = new SignUp.Google(
         timezone = from.timezone,
         accessToken = from.accessToken
       )
     }
     
-    implicit object Expand_Github_into_Email_StructuralUpcast_Reliable_87715943 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Github, SignUp.Email] {
+    implicit object Expand_Github_into_Email_StructuralUpcast_Reliable_87715943 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Github, SignUp.Email] {
       final class Expand(
         val _value: SignUp.Github
       ) extends _root_.scala.AnyVal {
@@ -844,7 +844,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Github_to_FacebookAuth_StructuralUpcast_Reliable_1190380666 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, FacebookAuth] {
+    implicit object Copy_Github_to_FacebookAuth_StructuralUpcast_Reliable_1190380666 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, FacebookAuth] {
       def convert(from: SignUp.Github): FacebookAuth = new FacebookAuth(
         accessToken = from.accessToken
       )
@@ -853,7 +853,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Github_to_Twitter_StructuralUpcast_Reliable_551608190 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, SignUp.Twitter] {
+    implicit object Copy_Github_to_Twitter_StructuralUpcast_Reliable_551608190 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, SignUp.Twitter] {
       def convert(from: SignUp.Github): SignUp.Twitter = new SignUp.Twitter(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -863,7 +863,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Github_to_GithubAuth_StructuralUpcast_Reliable_1383791909 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Github, GithubAuth] {
+    implicit object Copy_Github_to_GithubAuth_StructuralUpcast_Reliable_1383791909 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Github, GithubAuth] {
       def convert(from: SignUp.Github): GithubAuth = new GithubAuth(
         accessToken = from.accessToken
       )
@@ -903,12 +903,12 @@ object SignUp {
     
     implicit final class Conversions(
       val _value: SignUp.Google
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SignUp.Google]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SignUp.Google]
     
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Google_to_SignupAttributes_StructuralUpcast_Reliable_1951694635 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, SignupAttributes.Impl] {
+    implicit object Copy_Google_to_SignupAttributes_StructuralUpcast_Reliable_1951694635 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, SignupAttributes.Impl] {
       def convert(from: SignUp.Google): SignupAttributes.Impl = new SignupAttributes.Impl(
         timezone = from.timezone
       )
@@ -917,7 +917,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Google_to_GithubAuth_StructuralUpcast_Reliable_509157374 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, GithubAuth] {
+    implicit object Copy_Google_to_GithubAuth_StructuralUpcast_Reliable_509157374 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, GithubAuth] {
       def convert(from: SignUp.Google): GithubAuth = new GithubAuth(
         accessToken = from.accessToken
       )
@@ -926,7 +926,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Google_to_Facebook_StructuralUpcast_Reliable_931923947 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, SignUp.Facebook] {
+    implicit object Copy_Google_to_Facebook_StructuralUpcast_Reliable_931923947 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, SignUp.Facebook] {
       def convert(from: SignUp.Google): SignUp.Facebook = new SignUp.Facebook(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -936,13 +936,13 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Google_to_FacebookAuth_StructuralUpcast_Reliable_2065015201 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, FacebookAuth] {
+    implicit object Copy_Google_to_FacebookAuth_StructuralUpcast_Reliable_2065015201 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, FacebookAuth] {
       def convert(from: SignUp.Google): FacebookAuth = new FacebookAuth(
         accessToken = from.accessToken
       )
     }
     
-    implicit object Expand_Google_into_Phone_StructuralUpcast_Reliable_2135360406 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Google, SignUp.Phone] {
+    implicit object Expand_Google_into_Phone_StructuralUpcast_Reliable_2135360406 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Google, SignUp.Phone] {
       final class Expand(
         val _value: SignUp.Google
       ) extends _root_.scala.AnyVal {
@@ -963,7 +963,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Google_to_Github_StructuralUpcast_Reliable_985990195 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, SignUp.Github] {
+    implicit object Copy_Google_to_Github_StructuralUpcast_Reliable_985990195 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, SignUp.Github] {
       def convert(from: SignUp.Google): SignUp.Github = new SignUp.Github(
         timezone = from.timezone,
         accessToken = from.accessToken
@@ -973,7 +973,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Google_to_TwitterAuth_StructuralUpcast_Reliable_239596470 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, TwitterAuth] {
+    implicit object Copy_Google_to_TwitterAuth_StructuralUpcast_Reliable_239596470 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, TwitterAuth] {
       def convert(from: SignUp.Google): TwitterAuth = new TwitterAuth(
         accessToken = from.accessToken
       )
@@ -982,13 +982,13 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Google_to_GoogleAuth_StructuralUpcast_Reliable_1556090974 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, GoogleAuth] {
+    implicit object Copy_Google_to_GoogleAuth_StructuralUpcast_Reliable_1556090974 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, GoogleAuth] {
       def convert(from: SignUp.Google): GoogleAuth = new GoogleAuth(
         accessToken = from.accessToken
       )
     }
     
-    implicit object Expand_Google_into_Email_StructuralUpcast_Reliable_786918592 extends _root_.izumi.idealingua.runtime.IRTExtend[SignUp.Google, SignUp.Email] {
+    implicit object Expand_Google_into_Email_StructuralUpcast_Reliable_786918592 extends _root_.io.protoforce.runtime.IRTExtend[SignUp.Google, SignUp.Email] {
       final class Expand(
         val _value: SignUp.Google
       ) extends _root_.scala.AnyVal {
@@ -1009,7 +1009,7 @@ object SignUp {
     /**
       * conversion:structural-structure-upcast
       */
-    implicit object Copy_Google_to_OAuthData_StructuralUpcast_Reliable_301178454 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, OAuthData.Impl] {
+    implicit object Copy_Google_to_OAuthData_StructuralUpcast_Reliable_301178454 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, OAuthData.Impl] {
       def convert(from: SignUp.Google): OAuthData.Impl = new OAuthData.Impl(
         accessToken = from.accessToken
       )
@@ -1018,7 +1018,7 @@ object SignUp {
     /**
       * conversion:structural-sibling-upcast
       */
-    implicit object Copy_Google_to_Twitter_StructuralUpcast_Reliable_323026345 extends _root_.izumi.idealingua.runtime.IRTCast[SignUp.Google, SignUp.Twitter] {
+    implicit object Copy_Google_to_Twitter_StructuralUpcast_Reliable_323026345 extends _root_.io.protoforce.runtime.IRTCast[SignUp.Google, SignUp.Twitter] {
       def convert(from: SignUp.Google): SignUp.Twitter = new SignUp.Twitter(
         timezone = from.timezone,
         accessToken = from.accessToken

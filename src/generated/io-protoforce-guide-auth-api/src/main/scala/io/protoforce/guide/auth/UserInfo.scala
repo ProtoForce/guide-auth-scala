@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -40,18 +40,18 @@ object UserInfo {
   
   implicit final class Conversions(
     val _value: UserInfo
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[UserInfo]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[UserInfo]
   
   /**
     * conversion:interface-clone
     */
-  implicit object Copy_UserInfo_to_UserInfo_StructuralSibling_Reliable_1857904184 extends _root_.izumi.idealingua.runtime.IRTCast[UserInfo, UserInfo.Impl] {
+  implicit object Copy_UserInfo_to_UserInfo_StructuralSibling_Reliable_1857904184 extends _root_.io.protoforce.runtime.IRTCast[UserInfo, UserInfo.Impl] {
     def convert(from: UserInfo): UserInfo.Impl = new UserInfo.Impl(
       name = from.name
     )
   }
   
-  implicit object Expand_UserInfo_into_User_StructuralDowncast_Reliable_179059848 extends _root_.izumi.idealingua.runtime.IRTExtend[UserInfo, User] {
+  implicit object Expand_UserInfo_into_User_StructuralDowncast_Reliable_179059848 extends _root_.io.protoforce.runtime.IRTExtend[UserInfo, User] {
     final class Expand(
       val _value: UserInfo
     ) extends _root_.scala.AnyVal {

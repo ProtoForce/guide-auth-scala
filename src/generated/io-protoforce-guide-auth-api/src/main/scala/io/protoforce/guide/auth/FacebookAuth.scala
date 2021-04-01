@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -46,18 +46,18 @@ object FacebookAuth {
   
   implicit final class Conversions(
     val _value: FacebookAuth
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[FacebookAuth]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[FacebookAuth]
   
   /**
     * conversion:structural-sibling-upcast
     */
-  implicit object Copy_FacebookAuth_to_GithubAuth_StructuralUpcast_Reliable_304766903 extends _root_.izumi.idealingua.runtime.IRTCast[FacebookAuth, GithubAuth] {
+  implicit object Copy_FacebookAuth_to_GithubAuth_StructuralUpcast_Reliable_304766903 extends _root_.io.protoforce.runtime.IRTCast[FacebookAuth, GithubAuth] {
     def convert(from: FacebookAuth): GithubAuth = new GithubAuth(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_FacebookAuth_into_Google_StructuralUpcast_Reliable_2065015201 extends _root_.izumi.idealingua.runtime.IRTExtend[FacebookAuth, SignUp.Google] {
+  implicit object Expand_FacebookAuth_into_Google_StructuralUpcast_Reliable_2065015201 extends _root_.io.protoforce.runtime.IRTExtend[FacebookAuth, SignUp.Google] {
     final class Expand(
       val _value: FacebookAuth
     ) extends _root_.scala.AnyVal {
@@ -77,7 +77,7 @@ object FacebookAuth {
   /**
     * conversion:structural-sibling-upcast
     */
-  implicit object Copy_FacebookAuth_to_GoogleAuth_StructuralUpcast_Reliable_1351700503 extends _root_.izumi.idealingua.runtime.IRTCast[FacebookAuth, GoogleAuth] {
+  implicit object Copy_FacebookAuth_to_GoogleAuth_StructuralUpcast_Reliable_1351700503 extends _root_.io.protoforce.runtime.IRTCast[FacebookAuth, GoogleAuth] {
     def convert(from: FacebookAuth): GoogleAuth = new GoogleAuth(
       accessToken = from.accessToken
     )
@@ -86,13 +86,13 @@ object FacebookAuth {
   /**
     * conversion:structural-structure-upcast
     */
-  implicit object Copy_FacebookAuth_to_OAuthData_StructuralUpcast_Reliable_96787983 extends _root_.izumi.idealingua.runtime.IRTCast[FacebookAuth, OAuthData.Impl] {
+  implicit object Copy_FacebookAuth_to_OAuthData_StructuralUpcast_Reliable_96787983 extends _root_.io.protoforce.runtime.IRTCast[FacebookAuth, OAuthData.Impl] {
     def convert(from: FacebookAuth): OAuthData.Impl = new OAuthData.Impl(
       accessToken = from.accessToken
     )
   }
   
-  implicit object Expand_FacebookAuth_into_Github_StructuralUpcast_Reliable_1190380666 extends _root_.izumi.idealingua.runtime.IRTExtend[FacebookAuth, SignUp.Github] {
+  implicit object Expand_FacebookAuth_into_Github_StructuralUpcast_Reliable_1190380666 extends _root_.io.protoforce.runtime.IRTExtend[FacebookAuth, SignUp.Github] {
     final class Expand(
       val _value: FacebookAuth
     ) extends _root_.scala.AnyVal {
@@ -109,7 +109,7 @@ object FacebookAuth {
     )
   }
   
-  implicit object Expand_FacebookAuth_into_Twitter_StructuralUpcast_Reliable_527416816 extends _root_.izumi.idealingua.runtime.IRTExtend[FacebookAuth, SignUp.Twitter] {
+  implicit object Expand_FacebookAuth_into_Twitter_StructuralUpcast_Reliable_527416816 extends _root_.io.protoforce.runtime.IRTExtend[FacebookAuth, SignUp.Twitter] {
     final class Expand(
       val _value: FacebookAuth
     ) extends _root_.scala.AnyVal {
@@ -126,7 +126,7 @@ object FacebookAuth {
     )
   }
   
-  implicit object Expand_FacebookAuth_into_Facebook_StructuralDowncast_Reliable_727533476 extends _root_.izumi.idealingua.runtime.IRTExtend[FacebookAuth, SignUp.Facebook] {
+  implicit object Expand_FacebookAuth_into_Facebook_StructuralDowncast_Reliable_727533476 extends _root_.io.protoforce.runtime.IRTExtend[FacebookAuth, SignUp.Facebook] {
     final class Expand(
       val _value: FacebookAuth
     ) extends _root_.scala.AnyVal {
@@ -146,7 +146,7 @@ object FacebookAuth {
   /**
     * conversion:structural-sibling-upcast
     */
-  implicit object Copy_FacebookAuth_to_TwitterAuth_StructuralUpcast_Reliable_443986941 extends _root_.izumi.idealingua.runtime.IRTCast[FacebookAuth, TwitterAuth] {
+  implicit object Copy_FacebookAuth_to_TwitterAuth_StructuralUpcast_Reliable_443986941 extends _root_.io.protoforce.runtime.IRTCast[FacebookAuth, TwitterAuth] {
     def convert(from: FacebookAuth): TwitterAuth = new TwitterAuth(
       accessToken = from.accessToken
     )

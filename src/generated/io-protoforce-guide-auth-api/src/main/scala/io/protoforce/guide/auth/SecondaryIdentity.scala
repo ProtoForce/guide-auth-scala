@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -74,7 +74,7 @@ object SecondaryIdentity {
     
     implicit final class Conversions(
       val _value: SecondaryIdentity.Phone
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SecondaryIdentity.Phone]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SecondaryIdentity.Phone]
     
     implicit val Phone_random: IRTRandomGen[SecondaryIdentity.Phone] = new IRTRandomGen[SecondaryIdentity.Phone]{
       def id: String = "io.protoforce.guide.auth/SecondaryIdentity:Phone"
@@ -108,7 +108,7 @@ object SecondaryIdentity {
     
     implicit final class Conversions(
       val _value: SecondaryIdentity.Email
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[SecondaryIdentity.Email]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[SecondaryIdentity.Email]
     
     implicit val Email_random: IRTRandomGen[SecondaryIdentity.Email] = new IRTRandomGen[SecondaryIdentity.Email]{
       def id: String = "io.protoforce.guide.auth/SecondaryIdentity:Email"

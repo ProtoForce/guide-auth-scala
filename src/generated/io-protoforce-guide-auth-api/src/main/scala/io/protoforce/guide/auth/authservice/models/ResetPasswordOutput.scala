@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -56,7 +56,7 @@ object ResetPasswordOutput {
     
     implicit final class Conversions(
       val _value: ResetPasswordOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[ResetPasswordOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[ResetPasswordOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[ResetPasswordOutput.InternalErrorRef] = new IRTRandomGen[ResetPasswordOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/ResetPasswordOutput:InternalError"
@@ -91,7 +91,7 @@ object ResetPasswordOutput {
     
     implicit final class Conversions(
       val _value: ResetPasswordOutput.NotFoundErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[ResetPasswordOutput.NotFoundErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[ResetPasswordOutput.NotFoundErrorRef]
     
     implicit val NotFoundError_random: IRTRandomGen[ResetPasswordOutput.NotFoundErrorRef] = new IRTRandomGen[ResetPasswordOutput.NotFoundErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/ResetPasswordOutput:NotFoundError"

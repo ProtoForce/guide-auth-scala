@@ -1,23 +1,23 @@
 package io.protoforce.guide.auth.authservice
 
-import _root_.izumi.idealingua.model.typer.IRTRestSpec
-import _root_.izumi.idealingua.model.typer.IRTRestSpec.{
+import _root_.io.protoforce.model.typer.IRTRestSpec
+import _root_.io.protoforce.model.typer.IRTRestSpec.{
   IRTBasicField,
   IRTBodyParameter,
   IRTBodySpec,
   IRTExtractorSpec,
   OnWireScalar
 }
-import _root_.izumi.idealingua.model.typer.IRTRestSpec.IRTPathSegment.{
+import _root_.io.protoforce.model.typer.IRTRestSpec.IRTPathSegment.{
   Parameter,
   Word
 }
-import _root_.izumi.idealingua.model.typer.SharedRestSpec.IRTType
-import _root_.izumi.idealingua.model.typer.SharedRestSpec.HttpMethod.{
+import _root_.io.protoforce.model.typer.SharedRestSpec.IRTType
+import _root_.io.protoforce.model.typer.SharedRestSpec.HttpMethod.{
   Get,
   Post
 }
-import _root_.izumi.idealingua.runtime.transport.dispatch.server.GeneratedServerBase.{
+import _root_.io.protoforce.runtime.transport.dispatch.server.GeneratedServerBase.{
   MethodId,
   MethodName,
   ServiceName

@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -42,7 +42,7 @@ object ChangePasswordInput {
   
   implicit final class Conversions(
     val _value: ChangePasswordInput
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[ChangePasswordInput]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[ChangePasswordInput]
   
   implicit val ChangePasswordInput_random: IRTRandomGen[ChangePasswordInput] = new IRTRandomGen[ChangePasswordInput]{
     def id: String = "io.protoforce.guide.auth.authservice.models:ChangePasswordInput"

@@ -14,10 +14,10 @@ resolvers in ThisBuild += Opts.resolver.sonatypeSnapshots
 
 logBuffered in Test := false
 
-scalaVersion in ThisBuild := "2.13.3"
+scalaVersion in ThisBuild := "2.13.5"
 
 crossScalaVersions in ThisBuild := Seq(
-  "2.13.3"
+  "2.13.5"
 )
 
 updateOptions in ThisBuild := updateOptions.value.withLatestSnapshots(false)
@@ -28,23 +28,54 @@ scalacOptions in ThisBuild ++= Seq(
   "-language:higherKinds",
   "-feature",
   "-unchecked",
-  "-deprecation"
+  "-deprecation",
+  "-Xsource:2.13"
 )
 
 libraryDependencies in ThisBuild ++= Seq(
-   ("io.protoforce" %% "idealingua-runtime-rpc-scala" % "0.0.3-SNAPSHOT") ,
-   ("org.scalatest" %% "scalatest" % "3.2.3" % "test") 
+   ("io.7mind.izumi" %% "fundamentals-platform" % "1.0.5") ,
+   ("io.7mind.izumi" %% "fundamentals-bio" % "1.0.5") ,
+   ("io.7mind.izumi" %% "fundamentals-collections" % "1.0.5") ,
+   ("io.7mind.izumi" %% "fundamentals-functional" % "1.0.5") ,
+   ("io.7mind.izumi" %% "fundamentals-json-circe" % "1.0.5") ,
+   ("io.7mind.izumi" %% "distage-extension-logstage" % "1.0.5") ,
+   ("io.7mind.izumi" %% "distage-framework" % "1.0.5") ,
+   ( "org.scala-lang.modules" %% "scala-collection-compat" % "2.4.3") ,
+   ( "dezio" %% "zio" % "1.0.3") ,
+   ( "dezio" %%  "zio-interop-cats" % "2.2.0.1") ,
+   ( "org.http4s" %% "http4s-blaze-server" % "1.0.0-M8") ,
+   ( "org.asynchttpclient" %  "async-http-client" % "2.12.2") ,
+   ( compilerPlugin("org.typelevel" % "kind-projector" % "0.11.3" cross CrossVersion.full) ) ,
+   ("org.scalatest" %% "scalatest" % "3.2.3" % Test) 
 )
 
+scalacOptions in ThisBuild ++= {if (scalaVersion.value.startsWith("2.12")) {
+      Seq(
+        "-Xsource:2.13",
+        "-Ypartial-unification",
+      )
+} else {
+  Seq.empty
+}}
+
 lazy val `io-protoforce-guide-auth-api` = (project in file("io-protoforce-guide-auth-api"))
+    .dependsOn(
+      `io-protoforce-irt-api`
+    )
 
 lazy val `bundle-api` = (project in file("bundle-api"))
     .dependsOn(
-      `io-protoforce-guide-auth-api`
+      `io-protoforce-guide-auth-api`,
+      `io-protoforce-irt-api`
     )
 
 lazy val `api` = (project in file("."))
+    .dependsOn(
+      `io-protoforce-irt-api`
+    )
     .aggregate(
       `io-protoforce-guide-auth-api`,
       `bundle-api`
     )
+
+lazy val `io-protoforce-irt-api` = (project in file("io-protoforce-irt-api"))

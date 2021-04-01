@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth.authservice.models
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -56,7 +56,7 @@ object ConfirmEmailOutput {
     
     implicit final class Conversions(
       val _value: ConfirmEmailOutput.NotFoundErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[ConfirmEmailOutput.NotFoundErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[ConfirmEmailOutput.NotFoundErrorRef]
     
     implicit val NotFoundError_random: IRTRandomGen[ConfirmEmailOutput.NotFoundErrorRef] = new IRTRandomGen[ConfirmEmailOutput.NotFoundErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/ConfirmEmailOutput:NotFoundError"
@@ -91,7 +91,7 @@ object ConfirmEmailOutput {
     
     implicit final class Conversions(
       val _value: ConfirmEmailOutput.InternalErrorRef
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[ConfirmEmailOutput.InternalErrorRef]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[ConfirmEmailOutput.InternalErrorRef]
     
     implicit val InternalError_random: IRTRandomGen[ConfirmEmailOutput.InternalErrorRef] = new IRTRandomGen[ConfirmEmailOutput.InternalErrorRef]{
       def id: String = "io.protoforce.guide.auth.authservice.models/ConfirmEmailOutput:InternalError"

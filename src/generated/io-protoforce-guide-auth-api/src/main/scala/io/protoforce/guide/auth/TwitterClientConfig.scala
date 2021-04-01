@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -34,9 +34,9 @@ object TwitterClientConfig {
   
   implicit final class Conversions(
     val _value: TwitterClientConfig
-  ) extends _root_.izumi.idealingua.runtime.IRTConversions[TwitterClientConfig]
+  ) extends _root_.io.protoforce.runtime.IRTConversions[TwitterClientConfig]
   
-  implicit object Expand_TwitterClientConfig_into_TwitterServerConfig_StructuralDowncast_Reliable_679107677 extends _root_.izumi.idealingua.runtime.IRTExtend[TwitterClientConfig, TwitterServerConfig] {
+  implicit object Expand_TwitterClientConfig_into_TwitterServerConfig_StructuralDowncast_Reliable_679107677 extends _root_.io.protoforce.runtime.IRTExtend[TwitterClientConfig, TwitterServerConfig] {
     final class Expand(
       val _value: TwitterClientConfig
     ) extends _root_.scala.AnyVal {

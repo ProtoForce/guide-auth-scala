@@ -1,10 +1,10 @@
 package io.protoforce.guide.auth
 
-import _root_.izumi.idealingua.model.versioning.IRTSchema.{
+import _root_.io.protoforce.model.versioning.IRTSchema.{
   TypeBaseVersion,
   TypeFullVersion
 }
-import _root_.izumi.idealingua.runtime.{
+import _root_.io.protoforce.runtime.{
   IRTMetadata,
   IRTRandomGen,
   IRTTypeId
@@ -53,7 +53,7 @@ object MFAMethodRequest {
     
     implicit final class Conversions(
       val _value: MFAMethodRequest.App
-    ) extends _root_.izumi.idealingua.runtime.IRTConversions[MFAMethodRequest.App]
+    ) extends _root_.io.protoforce.runtime.IRTConversions[MFAMethodRequest.App]
     
     implicit val App_random: IRTRandomGen[MFAMethodRequest.App] = new IRTRandomGen[MFAMethodRequest.App]{
       def id: String = "io.protoforce.guide.auth/MFAMethodRequest:App"

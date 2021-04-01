@@ -65,7 +65,7 @@ import _root_.io.protoforce.guide.auth.authservice.models.{
   SignupInput,
   SignupOutput
 }
-import _root_.izumi.idealingua.runtime.codecs.IRTDomainCodec
+import _root_.io.protoforce.runtime.codecs.IRTDomainCodec
 
 trait IRTCodecAuthAbstract[_WIRE] extends IRTDomainCodec[_WIRE] {
   implicit def codec_io_protoforce_guide_auth_authservice_models_SigninOutput_irt: IRTCodecWire[SigninOutput]
